@@ -4,12 +4,13 @@
 }
 
 body {
-    --color-one: #ffa69e;
-    --color-two: #faf3dd;
-    --color-three: #b8f2e6;
-    --color-four: #aed9e0;
+    --color-one: #ffee32;
+    --color-two: #ffd100;
+    --color-three: #202020;
+    --color-four: #4d4d4d;
     font-family: "Noto Sans", sans-serif;
     background-color: var(--color-two);
+    text-align: center;
 }
 
 .container {
@@ -31,6 +32,7 @@ body {
 
 h2 {
     color: var(--color-one);
+    text-shadow: var(--color-three) 1px 0 10px;
 }
 
 .guest-score,
@@ -46,20 +48,19 @@ h2 {
     border-radius: 5px;
 }
 
-.counter {
+.btn {
     border: 2px solid var(--color-three);
     font-size: 18px;
     color: var(--color-one);
-    padding: 2px;
+    padding: 5px;
     border-radius: 3px;
-    background-color: var(--color-two);
+    background-color: var(--color-three);
 }
 
-.counter:hover {
+.btn:hover {
     scale: 1.05;
 }
 
-.counter:active {
-    background-color: var(--color-three);
-    scale: 1.06;
+.btn:active {
+    background-color: var(--color-two);
 }

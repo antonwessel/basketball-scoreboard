@@ -6,9 +6,20 @@ let guestScoreEl = document.querySelector(".guest-score")
 function increaseScore(amount, side) {
     if (side.toLowerCase() == "guest") {
         guestScore += amount
-        guestScoreEl.textContent = guestScore
+        updateScoresText()
     } else if (side.toLowerCase() == "home") {
         homeScore += amount
-        homeScoreEl.textContent = homeScore
+        updateScoresText()
     }
+}
+
+function updateScoresText() {
+    guestScoreEl.textContent = guestScore
+    homeScoreEl.textContent = homeScore
+}
+
+function resetScores() {
+    homeScore = 0
+    guestScore = 0
+    updateScoresText()
 }
