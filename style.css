@@ -43,6 +43,7 @@ h2 {
     align-items: center;
     color: var(--color-one);
     font-size: 25px;
+    border-radius: 5px;
 }
 
 .counter {

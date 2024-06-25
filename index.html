@@ -19,18 +19,18 @@
             <h2>Home</h2>
             <p class="home-score">0</p>
             <div class="counters">
-                <button class="counter">+ 1</button>
-                <button class="counter">+ 2</button>
-                <button class="counter">+ 3</button>
+                <button class="counter" onclick="increaseScore(1, 'home')">+ 1</button>
+                <button class="counter" onclick="increaseScore(2, 'home')">+ 2</button>
+                <button class="counter" onclick="increaseScore(3, 'home')">+ 3</button>
             </div>
         </div>
         <div class="scoreboard">
             <h2>Guest</h2>
             <p class="guest-score">0</p>
             <div class="counters">
-                <button class="counter">+ 1</button>
-                <button class="counter">+ 2</button>
-                <button class="counter">+ 3</button>
+                <button class="counter" onclick="increaseScore(1, 'guest')">+ 1</button>
+                <button class="counter" onclick="increaseScore(2, 'guest')">+ 2</button>
+                <button class="counter" onclick="increaseScore(3, 'guest')">+ 3</button>
             </div>
         </div>
     </div>
