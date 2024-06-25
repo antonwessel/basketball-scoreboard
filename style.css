@@ -1,0 +1,12 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    --color-one: #2B2E4A;
+    --color-two: #E84545;
+    --color-three: #903749;
+    --color-four: #53354A;
+    font-family: "Noto Sans", sans-serif;
+}
