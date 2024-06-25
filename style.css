@@ -4,9 +4,61 @@
 }
 
 body {
-    --color-one: #2B2E4A;
-    --color-two: #E84545;
-    --color-three: #903749;
-    --color-four: #53354A;
+    --color-one: #ffa69e;
+    --color-two: #faf3dd;
+    --color-three: #b8f2e6;
+    --color-four: #aed9e0;
     font-family: "Noto Sans", sans-serif;
+    background-color: var(--color-two);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 575px;
+    height: 385px;
+    margin: 0 auto;
+}
+
+.scoreboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+h2 {
+    color: var(--color-one);
+}
+
+.guest-score,
+.home-score {
+    background-color: var(--color-four);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-one);
+    font-size: 25px;
+}
+
+.counter {
+    border: 2px solid var(--color-three);
+    font-size: 18px;
+    color: var(--color-one);
+    padding: 2px;
+    border-radius: 3px;
+    background-color: var(--color-two);
+}
+
+.counter:hover {
+    scale: 1.05;
+}
+
+.counter:active {
+    background-color: var(--color-three);
+    scale: 1.06;
 }
