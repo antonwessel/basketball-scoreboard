@@ -9,11 +9,12 @@
 </head>
 
 <body>
-    <div class="scoreboards-wrapper">
+    <p id="timer"></p>
 
+    <div class="scoreboards-wrapper">
         <div class="scoreboard-container">
             <h2 class="scoreboard-header">Home</h2>
-            <p class="scoreboard-score" id="home-score-el">0</p>
+            <p class="scoreboard-score" id="home-score">0</p>
             <div class="btns-container">
                 <button class="scoreboard-btn" onclick="incrementHome(1)">+1</button>
                 <button class="scoreboard-btn" onclick="incrementHome(2)">+2</button>
@@ -23,7 +24,7 @@
 
         <div class="scoreboard-container">
             <h2 class="scoreboard-header">Guest</h2>
-            <p class="scoreboard-score" id="guest-score-el">0</p>
+            <p class="scoreboard-score" id="guest-score">0</p>
             <div class="btns-container">
                 <button class="scoreboard-btn" onclick="incrementGuest(1)">+1</button>
                 <button class="scoreboard-btn" onclick="incrementGuest(2)">+2</button>
@@ -31,6 +32,10 @@
             </div>
         </div>
     </div>
+
+    <button id="btn-new-game" onclick="newGame()">new game</button>
+
+
     <script src="script.js"></script>
 </body>
 
