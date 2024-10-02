@@ -28,6 +28,7 @@ function newGame() {
     updateScores();
     resetTimer();
     startTimer();
+    resetHighlight()
 }
 
 function updateScores() {
@@ -71,7 +72,7 @@ function highlightLeader() {
 
 function highlightTeam(team) {
     const element = document.getElementById(`${team}-score`);
-    element.style.fontSize = "150px";
+    element.style.fontSize = "120px";
     element.style.color = "gold";
     element.style.backgroundColor = "black";
     element.style.textShadow = "0 0 10px gold, 0 0 20px gold";
