@@ -2,4 +2,36 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: blanchedalmond;
+}
+
+.scoreboards-wrapper {
+    display: flex;
+    width: 600px;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    gap: 100px;
+}
+
+.scoreboard-score {
+    margin-top: 21px;
+    margin-bottom: 26px;
+    background-color: black;
+    color: white;
+    width: 155px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 90px;
+}
+
+button {
+    width: 45px;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
 }

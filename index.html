@@ -4,12 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Basketball Scoreboard</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <div class="scoreboards-wrapper">
 
+        <div class="scoreboard-container">
+            <h2 class="scoreboard-header">Home</h2>
+            <p class="scoreboard-score" id="home-score-el">0</p>
+            <div class="btns-container">
+                <button>+1</button>
+                <button>+2</button>
+                <button>+3</button>
+            </div>
+        </div>
+
+        <div class="scoreboard-container">
+            <h2 class="scoreboard-header">Guest</h2>
+            <p class="scoreboard-score" id="guest-score-el">0</p>
+            <div class="btns-container">
+                <button>+1</button>
+                <button>+2</button>
+                <button>+3</button>
+            </div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 
