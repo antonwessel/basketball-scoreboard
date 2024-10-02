@@ -15,11 +15,13 @@ window.onload = function () {
 function incrementHome(amount) {
     homeScore += amount
     updateScores()
+    highlightLeader()
 }
 
 function incrementGuest(amount) {
     guestScore += amount
     updateScores()
+    highlightLeader()
 }
 
 function newGame() {
@@ -54,4 +56,26 @@ function resetTimer() {
     seconds = 0
     minutes = 0
     document.getElementById("timer").textContent = "0:00"
+}
+
+function highlightLeader() {
+    let leader
+    if (homeScore > guestScore) {
+        leader = "home"
+    } else if (guestScore > homeScore) {
+        leader = "guest"
+    } else {
+        leader = "none"
+    }
+
+    if (leader === "home") {
+        document.getElementById("home-score").style.fontSize = "150px";
+        document.getElementById("guest-score").style.fontSize = "90px";
+    } else if (leader == "guest") {
+        document.getElementById("guest-score").style.fontSize = "150px";
+        document.getElementById("home-score").style.fontSize = "90px";
+    } else if (leader === "none") {
+        document.getElementById("home-score").style.fontSize = "90px";
+        document.getElementById("guest-score").style.fontSize = "90px";
+    }
 }
